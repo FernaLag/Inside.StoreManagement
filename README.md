@@ -33,11 +33,6 @@ Uma API robusta para gerenciar pedidos de uma loja, utilizando **SQL Server Expr
 
 1. Certifique-se de que o **SQL Server Express** está instalado.
 2. Configure o nome do servidor no formato `localhost\SQLEXPRESS`.
-3. Crie o banco de dados utilizando as **Migrations**:
-
-```bash
-dotnet ef database update --project Inside.StoreManagement.Persistence
-```
 
 ---
 
