@@ -6,7 +6,7 @@ Uma API robusta para gerenciar pedidos de uma loja, utilizando **.NET e SQL Serv
 
 ### Referências
 
-- [**Technical Design**](https://www.notion.so/Inside-Orders-Technical-Design-17c322dfed9a8093a980d507337e64fd)
+- [**Technical Design**](https://hissing-viscount-cf2.notion.site/Inside-StoreManagement-Technical-Design-17c322dfed9a8093a980d507337e64fd?pvs=74)
 - [**Vídeo Demonstrativo (em breve)**](https://example.com/demo-video)
 
 ---
