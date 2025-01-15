@@ -54,7 +54,7 @@ namespace Inside.StoreManagement.API
 
         private static void SetupDatabaseContext(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<OrdersDbContext>(options =>
+            services.AddDbContext<StoreManagementDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
                     .ConfigureWarnings(warnings =>
                         warnings.Ignore(RelationalEventId.PendingModelChangesWarning))

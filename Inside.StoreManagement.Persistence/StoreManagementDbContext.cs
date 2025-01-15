@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Inside.StoreManagement.Persistence
 {
-    public class OrdersDbContext(DbContextOptions<OrdersDbContext> options) : DbContext(options)
+    public class StoreManagementDbContext(DbContextOptions<StoreManagementDbContext> options) : DbContext(options)
     {
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }

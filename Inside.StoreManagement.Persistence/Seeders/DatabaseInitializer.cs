@@ -9,7 +9,7 @@ namespace Inside.StoreManagement.Persistence.Seeders
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using var scope = serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<OrdersDbContext>();
+            var context = scope.ServiceProvider.GetRequiredService<StoreManagementDbContext>();
 
             context.Database.Migrate();
 
@@ -17,7 +17,7 @@ namespace Inside.StoreManagement.Persistence.Seeders
                 SeedDatabase(context);
         }
 
-        public static void SeedDatabase(OrdersDbContext context)
+        public static void SeedDatabase(StoreManagementDbContext context)
         {
             Guid firstOrderGuid = Guid.NewGuid();
             Guid firstProductGuid = Guid.NewGuid();

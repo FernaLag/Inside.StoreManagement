@@ -9,17 +9,17 @@ namespace Inside.StoreManagement.Persistence.Tests.IntegrationTests
 {
     public class OrderRepositoryIntegrationTests
     {
-        private readonly OrdersDbContext _context;
+        private readonly StoreManagementDbContext _context;
         private readonly OrderRepository _repository;
 
         public OrderRepositoryIntegrationTests()
         {
             // Arrange
-            var options = new DbContextOptionsBuilder<OrdersDbContext>()
-                .UseSqlServer("Server=(local)\\SQLEXPRESS;Database=TestInsideOrdersDB;Trusted_Connection=True;TrustServerCertificate=True")
+            var options = new DbContextOptionsBuilder<StoreManagementDbContext>()
+                .UseSqlServer("Server=(local)\\SQLEXPRESS;Database=TestStoreManagementDB;Trusted_Connection=True;TrustServerCertificate=True")
                 .Options;
 
-            _context = new OrdersDbContext(options);
+            _context = new StoreManagementDbContext(options);
 
             _context.Database.EnsureDeleted();
             _context.Database.Migrate();

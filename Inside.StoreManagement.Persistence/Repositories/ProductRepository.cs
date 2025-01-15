@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Inside.StoreManagement.Persistence.Repositories
 {
-    public class ProductRepository(OrdersDbContext context) : IProductRepository
+    public class ProductRepository(StoreManagementDbContext context) : IProductRepository
     {
-        private readonly OrdersDbContext _context = context;
+        private readonly StoreManagementDbContext _context = context;
 
         public async Task AddAsync(Product product)
         {

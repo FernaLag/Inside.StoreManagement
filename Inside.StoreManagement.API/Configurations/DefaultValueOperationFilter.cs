@@ -21,7 +21,7 @@ namespace Inside.StoreManagement.API.Configurations
                     if (schemaId == "AddProductToOrderCommand")
                     {
                         using var scope = serviceProvider.CreateScope();
-                        OrdersDbContext ordersDbContext = scope.ServiceProvider.GetRequiredService<OrdersDbContext>();
+                        StoreManagementDbContext ordersDbContext = scope.ServiceProvider.GetRequiredService<StoreManagementDbContext>();
 
                         string lastOrderGuid = ordersDbContext.Orders.OrderBy(o => o.CreatedAt).LastOrDefault().Id.ToString();
                         string lastProductGuid = ordersDbContext.Products.OrderBy(o => o.CreatedAt).LastOrDefault().Id.ToString();

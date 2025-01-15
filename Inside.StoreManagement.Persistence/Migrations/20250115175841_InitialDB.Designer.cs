@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Inside.StoreManagement.Persistence.Migrations
 {
-    [DbContext(typeof(OrdersDbContext))]
+    [DbContext(typeof(StoreManagementDbContext))]
     [Migration("20250115175841_InitialDB")]
     partial class InitialDB
     {
