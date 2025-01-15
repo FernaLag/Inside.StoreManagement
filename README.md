@@ -1,6 +1,6 @@
 # **Inside.StoreManagement**
 
-Uma API robusta para gerenciar pedidos de uma loja, utilizando **SQL Server Express** e padrões de design modernos.
+Uma API robusta para gerenciar pedidos de uma loja, utilizando **.NET e SQL Server Express** e padrões de design modernos.
 
 ---
 
