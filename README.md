@@ -51,7 +51,7 @@ dotnet run --project Inside.StoreManagement.API
 
 ### **Acesse o Swagger**
 
-- **`https://localhost:5001/`**
+- **`https://localhost:7090/`**
 
 ---
 
