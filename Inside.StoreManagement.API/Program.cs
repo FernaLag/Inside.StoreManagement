@@ -11,7 +11,7 @@ WebApplication app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Trio Contact Sync");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store Management");
     c.RoutePrefix = string.Empty;
 });
 
